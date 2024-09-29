@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shutter Template</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            background-color: #000; /* Black background */
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #ffffff; /* White background */
+        }
+        .navbar-brand img {
+            height: 50px; /* Set logo height */
+            width: auto; /* Maintain aspect ratio */
+        }
+
+        .navbar-nav .nav-link {
+            color: #000; /* Default link color */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ff0000; /* Change color on hover */
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://preview.colorlib.com/theme/shutter/images/img_4.jpg') no-repeat center center/cover; /* Background image */
+            color: #000000;
+            padding: 200px;
+            text-align: center;
+        }
+
+        /* Portfolio Section */
+        .portfolio img {
+            border-radius: 10px;
+            transition: transform 0.3s;
+            width: 100%; /* Make sure images fill the column */
+        }
+        .portfolio img:hover {
+            transform: scale(1.05);
+        }
+
+        /* About Section */
+        .about {
+            background-color: #ffffff; /* White background */
+            padding: 50px 0;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #f9f9f9; /* Light grey */
+            padding: 50px 0;
+        }
+
+        /* Button */
+        .btn-primary {
+            background-color: #007bff; /* Primary button color */
+            border-color: #007bff; /* Button border */
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            border-color: #0056b3; /* Darker border on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbIKa7YPdc-l4fNLlX7lL-Jat-OjlJXGFVpA&s" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-4"><strong>Capture Your Moments</strong></h1>
+            <p class="lead"><strong>With our stunning photography services.</strong></p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="https://preview.colorlib.com/theme/shutter/images/img_5.jpg" class="img-fluid" alt="Portfolio 1">
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="https://preview.colorlib.com/theme/shutter/images/img_8.jpg" class="img-fluid" alt="Portfolio 2">
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="https://preview.colorlib.com/theme/shutter/images/img_9.jpg" class="img-fluid" alt="Portfolio 3">
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="https://preview.colorlib.com/theme/shutter/images/img_10.jpg" class="img-fluid" alt="Portfolio 4">
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="https://preview.colorlib.com/theme/shutter/images/img_6.jpg" class="img-fluid" alt="Portfolio 5">
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="https://preview.colorlib.com/theme/shutter/images/img_1.jpg" class="img-fluid" alt="Portfolio 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae est orci. Proin quis arcu fermentum, aliquet massa sed, fermentum nulla.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://media.istockphoto.com/id/1463854233/photo/flock-of-seagulls-flying-over-rough-ocean.jpg?s=612x612&w=0&k=20&c=oJvHKhs1XdzcmF45cUo0JulYSb27vcQZS2OYk12Q9q8=" class="img-fluid" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
